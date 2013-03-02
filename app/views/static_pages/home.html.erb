@@ -1,0 +1,22 @@
+<% if user_signed_in? %>
+    <h1>You're Signed In!</h1>
+<% else %>
+<div class="center hero-unit">
+    <h1>Welcome to Aerigo!</h1>
+
+    <h2>
+      You've been invited to get a glimpse of the future in atmospheric water harvesting with
+      <a href="http://aerigo.com/sneakpeak.html">Aerigo Water Technology</a>.
+    </h2>
+
+
+    <%= link_to "Sneak Peak. Sign up now!", new_user_registration_path, 
+                                class: "btn btn-large btn-primary" %>
+<p>
+</p>
+<p>
+</p>
+<p>Our goal is to have a working prototype August 2013.</p>
+
+</div>
+<% end %>
